@@ -1,12 +1,11 @@
 name: ci-golang-workflow
-on:
-    push:
+on: [push]
 jobs:
     check-application:
-        runs-on: ubuntu-latests
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setuo-go@v2
+            - uses: actions/setup-go@v2
               with:
                   go-version: 1.15
             - run: go test
