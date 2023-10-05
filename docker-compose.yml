@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+
+  go-app:
+    container_name: go-app
+    image: go-app
+    tty: true
+    build: .
+    entrypoint: ["tail", "-f"]
+
+
