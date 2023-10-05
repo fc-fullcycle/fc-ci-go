@@ -3,7 +3,7 @@ LABEL authors="fcoromoto"
 
 WORKDIR /app
 
-COPY src .
+COPY . .
 
 RUN go build -o math
 
