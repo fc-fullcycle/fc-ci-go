@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./math
+go run math.go
