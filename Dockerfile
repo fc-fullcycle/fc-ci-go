@@ -1,4 +1,4 @@
-FROM golang:1.19 AS local
+FROM golang:1.19
 LABEL authors="fcoromoto"
 
 WORKDIR /app
